@@ -81,7 +81,7 @@ function decodeParams(names, types, data) {
       var result = coder.decode(data, offset);
       offset += result.consumed;
     }
-    values[index] = result.value;
+    // values[index] = result.value;
     if (names[index]) { values[names[index]] = result.value; }
   });
   return values;
